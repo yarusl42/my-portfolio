@@ -1,0 +1,101 @@
+:root {
+  --primary: #448FC5;
+  --white: white;
+  --secondary: #BFBFBF;
+  --black: #000000;
+  --bg-primary: #121221;
+  --bg-secondary: #263248;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl-300";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Museo Sans Cyrl-700";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MuseoSansCyrl_700.otf") format("opentype");
+}
+@font-face {
+  font-family: "Museo Sans Cyrl-500";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MuseoSansCyrl_500.otf") format("opentype");
+}
+@font-face {
+  font-family: "Museo Sans Cyrl-100";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MuseoSansCyrl-100.ttf") format("truetype");
+}
+
+
+div, span, p, a, b, i {
+  font-family: 'Museo Sans Cyrl-500', sans-serif;
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fw100 {
+  font-family: 'Museo Sans Cyrl-100', sans-serif;
+}
+
+.fw300 {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+}
+
+.fw500 {
+  font-family: 'Museo Sans Cyrl-500', sans-serif;
+}
+
+.fw700 {
+  font-family: 'Museo Sans Cyrl-700', sans-serif;
+}
+
+.container {
+  max-width: 1340px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.sector {
+  margin-top: 180px;
+}
+
+.white {
+  color: var(--white);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.hoverable {
+  transition: color 0.15s ease-out;
+}
+
+.secondary.hoverable:hover {
+  color: var(--white);
+}
+
+.white.hoverable:hover {
+  color: var(--primary);
+}
+
+.primary.hoverable:hover {
+  color: var(--white);
+}

@@ -1,0 +1,355 @@
+/* btn */
+.btn {
+  padding: 13px 24px;
+  border: 1.5px solid var(--primary);
+  display: inline-block;
+  border-radius: 8px;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn.btn_medium {
+
+}
+
+.btn.btn_small {
+  padding: 12px 19px;
+  font-size: 13px;
+}
+
+.btn.btn_large {
+  
+}
+/* end btn */
+
+
+/* title_sep */
+.title_sep {
+  display: flex;
+}
+
+.title_sep .title_sep_content {
+  position: relative;
+}
+
+.title_sep .title_spe_num {
+  color: var(--primary);
+  font-family: 'Recursive', sans-serif;
+  font-size: 26px;
+  margin-top: auto;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+.title_sep .title_sep_text {
+  font-size: 32px;
+  color: var(--white);
+}
+
+.title_sep .title_sep_line {
+  position: absolute;
+  width: 285px;
+  height: 1px;
+  background-color: var(--secondary);
+  left: calc(100% + 40px);
+  top: 50%;
+}
+
+/* end title_sep */
+
+
+/* arrow_title */
+.arrow_title  {
+  display: flex;
+  align-items: center;
+}
+.arrow_title .arrow_title_text {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  margin-left: 8px;
+}
+/* end arrow_title */
+
+
+/* selector  */
+.selector .selector_option {
+  padding: 7px 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.selector .selector_option__text {
+  font-size: 15px;
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+}
+
+.selector .selector_option.active .selector_option__text {
+  color: var(--primary);
+}
+
+.selector .selector_option__bar {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  display: block;
+  left: 0;
+  top: 0;
+  background-color: var(--secondary);
+}
+
+.selector .selector_option.active .selector_option__bar {
+  background-color: var(--primary);
+}
+
+.selector .selector_option.active {
+  cursor: default;
+}
+
+.selector .selector_option__bar {
+  transition: background 0.1s ease-out;
+}
+
+.selector .selector_option__text {
+  transition: color 0.1s ease-out;
+}
+
+.selector .selector_option:hover .selector_option__bar {
+  background-color: var(--primary);
+}
+.selector .selector_option:hover .selector_option__text {
+  color: var(--primary);
+}
+/* end selector  */
+
+
+/* cv_card */
+.cv_card {
+  display: none;
+}
+
+.cv_card.active {
+  display: block;
+}
+
+.cv_card .experience_description {
+  width: 100%;
+}
+
+.cv_card .cv_card__title {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.cv_card .cv_card__time {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  font-size: 15px;
+  margin-bottom: 17px;
+  
+}
+
+.cv_card .cv_card__bulletpoint {
+  margin-bottom: 15px;
+}
+
+.cv_card .arrow_title {
+  align-items: flex-start;
+
+}
+
+.cv_card .arrow_title_text {
+  font-size: 15px;
+
+}
+
+.cv_card .arrow_title_img {
+  margin-top: 2px;
+}
+/* end cv_card */
+
+/* tags */
+.tags {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+.tags .tag {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  font-size: 13px;
+}
+/* end tags */
+
+/* project */
+.project {
+  display: flex;
+
+}
+
+.project .project_image {
+  width: 60%;
+}
+
+.project .project_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project .project_inner {
+  width: 40%;
+  flex: 1;
+  position: relative;
+}
+
+.project.project_right .project_inner {
+  top: 0;
+  right: 0;
+}
+
+.project .project_content {
+  top: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+
+}
+
+.project.project.project_right .project_content {
+  align-items: flex-end;
+}
+
+.project .project_type {
+  color: var(--primary);
+  font-size: 13px;
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+}
+
+.project .project_title {
+  color: var(--white);
+  font-size: 32px;
+  margin-bottom: 20px;
+  width: 150%;
+  
+}
+
+.project.project_right {
+  text-align: right;
+}
+
+.project .project_description {
+  font-size: 15px;
+  background-color: var(--bg-secondary);
+  padding: 24px 27px;
+  width: 120%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.project .project_description span {
+  font-size: 15px;
+  color: var(--primary);
+}
+/* end project */
+
+
+
+/* card_grid */
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto); /* adjust the minmax to your desired min and max height*/
+  gap: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* styles for desktop */
+  .card_grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* styles for tablet */
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* styles for mobile */
+  .card_grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50px, auto);
+  }
+}
+/* end card_grid */
+
+
+/* article */
+.article {
+  padding: 30px 17px;
+  border-radius: 10px;
+  background-color: var(--bg-secondary);
+}
+
+.article .article__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-right: 16px;
+}
+
+.article .article_link_img {
+  width: 25px;
+  height: 25px;
+}
+
+.article .article_title {
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.article .article_text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/* end article */
+
+
+/* rectangle */
+.rectangle {
+  position: absolute;
+  box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 18px 7px rgba(255, 255, 255, 0.025), 0px 0px 18px 7px rgba(255, 255, 255, 0.025);
+
+  animation: moveRectangle 30s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveRectangle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+/* end rectangle */

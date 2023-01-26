@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  background: var(--bg-primary);
+  background-image: url('../img/main-bg.png');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left -150px top -200px;
+}
+
+menu {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+}
+
+menu .menu_item {
+  display: flex;
+}
+
+menu .contact_info {
+  display: flex;
+  align-items: center;
+  margin-left: 38px;
+}
+
+menu .contact_info span {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  font-size: 18px;
+}
+
+menu .contact_info span:first-child  {
+  margin-right: 25px;
+}
+
+menu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 555px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+menu .nav_item__text {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  font-size: 18px;
+}
+
+menu .nav_item__nuber {
+  color: var(--primary);
+  font-size: 20px;
+  font-family: 'Recursive', sans-serif;
+}
+
+menu .nav_item:hover + menu .nav_item__text {
+  color: var(--primary);
+}
+
+
+menu nav a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+menu .dropdown_links {
+  position: absolute;
+  left: 12px;
+  top: calc(100% + 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+menu .dropdown_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+header {
+  max-width: 929px;
+  margin-right: auto;
+  margin-left: auto;
+  
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .title, header .subtitle {
+  font-size: 75px;
+  margin-left: -3px;
+
+}
+
+header .greetings {
+  margin-bottom: 10px;
+}
+header .subtitle {
+  margin-left: -3px;
+  margin-bottom: 20px;
+}
+
+header .description {
+  max-width: 603px;
+  margin-bottom: 40px;
+}
+
+header .description span {
+  color: var(--primary);
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+}
+
+#about {
+  max-width: 889px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about .about_content {
+  display: flex;
+}
+
+#about .about_text {
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+}
+
+#about .about_text span {
+  
+  color: var(--primary);
+}
+
+#about .about_item_content {
+  width: 100%;
+}
+
+#about .about_item_image {
+  width: 293px;
+}
+
+#about .about_skills {
+  display: flex;
+  max-width: 329px;
+  justify-content: space-between;
+}
+
+#about .arrow_title {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+
+#about .about_item_image {
+  margin-left: 42px;
+  margin-top: 25px;
+  position: relative;
+}
+
+#about .about_item_image img {
+  z-index: 2;
+  position: relative;
+}
+
+#about .about_image_bg {
+  position: absolute;
+  width: 271px;
+  height: 271px;
+  border: 1px solid var(--primary);
+  border-radius: 7px; 
+  right: -20px;
+  top: 20px;
+  z-index: 1;
+}
+
+
+#experience {
+  max-width: 671px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#experience .title_sep {
+  margin-bottom: 36px;
+}
+
+#experience .experience_content {
+  display: flex;
+}
+
+#experience .experience_selector {
+  margin-right: 6px;
+}
+
+
+#work {
+  max-width: 913px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work .projects_inner {
+  margin-top: 20px;
+}
+
+#work .projects_inner .project {
+  margin-top: 100px;
+  
+}
+
+#work .projects_show_more {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+}
+
+#work .articles_title {
+  color: var(--white);
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#work .articles_archive {
+  color: var(--primary);
+  font-size: 13px;
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#work .article_show_more {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: block;
+}
+
+#work .articles .card_grid {
+  margin-bottom: 65px;
+}
+
+#contact {
+  max-width: 679px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#contact .contact_title {
+  margin-bottom: 10px;
+}
+
+#contact .contact_title .num {
+  font-family: 'Recursive', sans-serif;
+  font-size: 26px;
+  color: var(--primary);
+}
+
+
+#contact .contact_title .text {
+  font-size: 32px;
+  color: var(--primary);
+}
+
+#contact .contact_subtitle {
+  color: var(--white);
+  font-size: 75px;
+  font-family: 'Museo Sans Cyrl-700', sans-serif;
+  margin-bottom: 30px;
+}
+
+#contact .contact_text {
+  font-size: 20px;
+  font-family: 'Museo Sans Cyrl-300', sans-serif;
+  margin-bottom: 50px;
+}
+
+footer .copyright {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Museo Sans Cyrl-100', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
